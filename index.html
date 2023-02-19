@@ -11,7 +11,7 @@
                 <img src="imagenes/logo.jpg">
                 <h1 class="titulo"><br><strong>REPORTE DIARIO DE EXPLOSIVOS - ACOPIO</strong></h1> 
             </header>
-                    <form class="formulario" action="https://formsubmit.co/gabrenealvarez.p2@gmail.com" method="post">
+                    <form class="formulario" action="https://formsubmit.co/gabrenealvarez.p2@gmail.com" method="post" name="formulario" action="/send.php" enctype="multipart/form-data">
                         <fieldset class="datosObligatorios">
                             <div class="campo">
                                 <label for="nombres"><strong>Nombres y Apellidos</strong></label><br>
@@ -78,26 +78,21 @@
                         </fieldset> 
                         <fieldset>
                             <label for="fecha"><strong>Fecha de reporte</strong></label></fieldset>
-                            <input type="date"  name="fecha" id="fecha" min="2023-01-01" max="2023-12-31"/> 
+                            <input type="date"  name="fecha" id="fecha" min="2023-01-01" max="2023-12-31" requiredx/> 
                         </fieldset>
                         <fieldset class="UP">
                             <label class="unidadProduccion"><strong>Unidad de Producción</strong></label><br><br>
                                 <div class="unidad">
-                                        <input type="radio" name="unidadProduccion" value="staMaria" checked>Santa María
-                                    </label>
                                     <label>
-                                        <input type="radio" name="unidadProduccion" value="paraiso">Paraíso
-                                    </label>
-                                    <label>
-                                        <input type="radio" name="unidadProduccion" value="cedro">Cedro
+                                        <input type="radio" name="unidadProduccion" value="cedro" checked>Cedro
                                     </label>
                                 </div>
                         </fieldset>
                         <fieldset>
                             <label for="turno"><strong>Turno de Trabajo</strong></label><br><br>
                                 
-                                    <select id="turno"  name="turnotrabajo" >
-                                    <option selected disabled value="">Selecione</option>
+                                    <select id="turno"  name="turnotrabajo" required>
+                                    <option>Selecione</option>
                                     <option>Día</option>
                                     <option>Noche</option>
                                     </select>
@@ -118,7 +113,7 @@
                                 </div>
                         </fieldset>
                         <fieldset>
-                            <label for="taladrosperforados"><strong>Cantidad de taladros perforados  <input id="taladrosperforados" type="number" ></strong></label>
+                            <label for="taladrosperforados"><strong>Cantidad de taladros perforados  <input id="taladrosperforados" type="number" required></strong></label>
                             <div class="tipoTal">
                                 <ul>
                                     <li><label for="taladroscargados">Cargados <input id="taladroscargados" type="number"  name="taladroscargados" required></strong></label></li>
@@ -139,23 +134,23 @@
                                 <tbody>
                                     <tr>
                                         <td><label for="emulnor5k">Emulnor 5000</label></td>
-                                        <td><input type="number" id="emulnor5k" name="emulnor5k"></td>
+                                        <td><input type="number" id="emulnor5k" name="emulnor5k" required></td>
                                     </tr>
                                     <tr>
                                         <td><label for="emulnor3k">Emulnor 3000</label></td>
-                                        <td><input type="number" id="emulnor3k" name="emulnor3k"></td>
+                                        <td><input type="number" id="emulnor3k" name="emulnor3k" required></td>
                                     </tr>
                                     <tr>
                                         <td><label for="carmex1"> Carmex 1.8m</label></td>
-                                        <td><input type="number" id="carmex1" name="carmex1"></td>
+                                        <td><input type="number" id="carmex1" name="carmex1" required></td>
                                     </tr>
                                     <tr>
                                         <td><label for="carmex2">Carmex 1.5m</label> </td>
-                                        <td><input type="number" id="carmex2" name="carmex2"></td>
+                                        <td><input type="number" id="carmex2" name="carmex2" required></td>
                                     </tr>
                                     <tr class="ultima_fila">
                                         <td><label for="mecharapida">Mecha Rápida</label></td>
-                                        <td><input type="number" id="mecharapida" name="mecharapida"></td>
+                                        <td><input type="number" id="mecharapida" name="mecharapida" required></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -191,6 +186,10 @@
                                     </tr>
                                 </tbody>
                             </table>
+                        </fieldset>
+                        <fieldset>
+                            <legend name="evidencias"><h3>*Adjuntar evidencias fotográficas</h3></legend>
+                            <input type="file" id="insertarimg" name="evidencias" accept=".pdf,.jpg,.png" multiple />
                         </fieldset>
                         <input type="submit" value="Enviar Reporte" class="enviar">
                     </form> 
