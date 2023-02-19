@@ -1,6 +1,7 @@
 * {
     font-family: sans-serif;
     padding: 0;
+    width: auto;
 }
 img {
     width: 100vw;
@@ -29,8 +30,9 @@ header{
 .tipoTal li {
     display:inline-block;
 }
+
 table {
-    margin: 20px 40px;
+    margin: 20px 280px;
 }
 
 thead {
@@ -87,6 +89,41 @@ th:nth-last-child(1){
     border-radius: 5px;
 }
 
+#nombres, #ruc, #razonSocial, #telefono {
+    width: 250px;
+    height: 20px;
+    padding: 3px 3px;
+    border-radius: 4px;
+}
+
+#zonalabor, #fecha, #turno, #labor {
+    width: 120px;
+    padding: 3px 3px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    border-color: 4px solid black;
+}
+input#taladrosperforados, input#taladroscargados, input#taladrosvacios{
+    width: 50px;
+    padding: 3px 3px;
+    border-radius: 3px;
+}
+
+input#emulnor5k, input#emulnor3k, input#carmex1, input#carmex2, input#mecharapida, input#emulnor5k-stock, input#emulnor3k-stock, input#carmex1-stock, input#carmex2-stock, input#mecharapida-stock {
+    width: 50px;
+    padding: 2px 2px;
+    border-radius: 3px;
+}
+
+select#contrata {
+    width: 300px;
+    padding: 3px 3px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
 
 @media screen and (max-width: 480px){
 
@@ -132,8 +169,8 @@ th:nth-last-child(1){
         text-align: center;
         font-weight: bold;
     }
-    
     #insertarimg {
         width: auto;
     }
+
 }
