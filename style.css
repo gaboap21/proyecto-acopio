@@ -172,5 +172,10 @@ select#contrata {
     #insertarimg {
         width: auto;
     }
+    
+    table {
+        margin: 20px 40px;
+    }
 
+}
 }
