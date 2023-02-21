@@ -14,12 +14,12 @@
                     <form class="formulario" action="https://formsubmit.co/gabrenealvarez.p2@gmail.com" method="post" name="formulario" action="/send.php" enctype="multipart/form-data">
                         <fieldset class="datosObligatorios">
                             <div class="campo">
-                                <label for="nombres"><strong>Nombres y Apellidos</strong></label><br>
+                                <label for="nombres"><strong>Nombres y Apellidos (SUPERVISOR)</strong></label><br><br>  
                                 <input type="text" name="Nombres y Apellidos" id="nombres" required>
                             </div>
                             <div class="campo">
-                                <label for="telefono"><strong>Número de Teléfono</strong></label><br>
-                                <input type="text" name="Telefono" id="telefono" required><br><br>
+                                <label for="telefono"><strong>Número de Teléfono</strong></label><br><br>
+                                <input type="text" name="Telefono" id="telefono" required><br>
                             </div>
                             <div class="campo">
                                 <label for="Contrata" name="Contrata"><strong>Nombre de Contrata</strong></label><br><br>
@@ -102,9 +102,19 @@
                                     <option>Día</option>
                                     <option>Noche</option>
                                     </select>
-                                
                         </fieldset>
-        
+                        <fieldset class="UP">
+                            <label class="pregunta"><strong>¿Se realizó PERFORACION?</strong></label><br><br>
+                                <div class="pregunta">
+                                    <label>
+                                        <input type="radio" name="yes-o-no" value="si" checked>SI
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="yes-o-no" value="no" >NO
+                                    </label>
+                                </div>
+                        </fieldset>
+                        <hr size="5px" color="black">
                         <fieldset>   
                             <legend><h3>*DISPARO 1</h3></legend>
                             <label for="labor"><strong>Tipo de Labor</strong></label>
@@ -123,10 +133,45 @@
                             <div class="tipoTal">
                                 <ul>
                                     <li><label for="taladroscargados">Cargados <input id="taladroscargados" type="number"  name="TaladrosCargados1" ></strong></label></li>
-                                    <li><label for="taladrosvacios">Vacios <input id="taladrosvacios" type="number"  name="TaladrosVacios1" ></strong></label></li><br><br>
+                                    <li><label for="taladrosvacios">Vacios <input id="taladrosvacios" type="number"  name="TaladrosVacios1" ></strong></label></li>
                                 </ul> 
                             </div>
                         </fieldset>
+                        <fieldset>
+                            <legend name="STOCK"><h3>Explosivos y accesorios UTILIZADOS</h3></legend>
+                           
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Explosivo y accesorios</th>
+                                        <th>Cantidad (und)</th>
+                                    </tr>               
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><label for="emulnor5k">Emulnor 5000</label></td>
+                                        <td><input type="number" id="emulnor5k" name="Emulnor5k" ></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="emulnor3k">Emulnor 3000</label></td>
+                                        <td><input type="number" id="emulnor3k" name="Emulnor3k" ></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="carmex1"> Carmex 1.5m</label></td>
+                                        <td><input type="number" id="carmex1" name="Carmex1.5" ></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="carmex2">Carmex 1.8m</label> </td>
+                                        <td><input type="number" id="carmex2" name="Carmex1.8" ></td>
+                                    </tr>
+                                    <tr class="ultima_fila">
+                                        <td><label for="mecharapida">Mecha Rápida (mts.)</label></td>
+                                        <td><input type="number" step="any" id="mecharapida" name="MechaRapida" ></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </fieldset>
+                        <hr size="5px" color="black">
                         <fieldset>
                             <legend><h3>*DISPARO 2</h3></legend>
                             <label for="labor"><strong>Tipo de Labor</strong></label>
@@ -145,15 +190,50 @@
                             <div class="tipoTal">
                                 <ul>
                                     <li><label for="taladroscargados">Cargados <input id="taladroscargados" type="number"  name="TaladrosCargados2" ></strong></label></li>
-                                    <li><label for="taladrosvacios">Vacios <input id="taladrosvacios" type="number"  name="TaladrosVacios2" ></strong></label></li><br><br>
+                                    <li><label for="taladrosvacios">Vacios <input id="taladrosvacios" type="number"  name="TaladrosVacios2" ></strong></label></li>
                                 </ul> 
                             </div>
                         </fieldset>
                         <fieldset>
+                            <legend name="STOCK"><h3>Explosivos y accesorios UTILIZADOS</h3></legend>
+                           
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Explosivo y accesorios</th>
+                                        <th>Cantidad (und)</th>
+                                    </tr>               
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><label for="emulnor5k">Emulnor 5000</label></td>
+                                        <td><input type="number" id="emulnor5k" name="Emulnor5k-2" ></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="emulnor3k">Emulnor 3000</label></td>
+                                        <td><input type="number" id="emulnor3k" name="Emulnor3k-2" ></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="carmex1"> Carmex 1.5m</label></td>
+                                        <td><input type="number" id="carmex1" name="Carmex1.5-2" ></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="carmex2">Carmex 1.8m</label> </td>
+                                        <td><input type="number" id="carmex2" name="Carmex1.8-2" ></td>
+                                    </tr>
+                                    <tr class="ultima_fila">
+                                        <td><label for="mecharapida">Mecha Rápida (mts.)</label></td>
+                                        <td><input type="number" step="any" id="mecharapida" name="MechaRapida-2" ></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </fieldset>
+                        <hr size="5px" color="black">
+                        <fieldset>
                             <legend><h3>*DISPARO 3</h3></legend> 
                             <label for="labor"><strong>Tipo de Labor</strong></label>
                                     <div><br>
-                                        <select id="labor" name="Tipo de Labor3"  >
+                                        <select id="labor" name="Tipo de Labor3" >
                                         <option selected disabled value="">Selecione</option>
                                         <option >Cortada</option>
                                         <option >Chimenea</option>
@@ -173,43 +253,43 @@
                         </fieldset>
                         <fieldset>
                             <legend name="STOCK"><h3>Explosivos y accesorios UTILIZADOS</h3></legend>
-                           
                             <table>
                                 <thead>
                                     <tr>
                                         <th>Explosivo y accesorios</th>
-                                        <th>Cantidad</th>
+                                        <th>Cantidad (und)</th>
                                     </tr>               
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td><label for="emulnor5k">Emulnor 5000</label></td>
-                                        <td><input type="number" id="emulnor5k" name="Emulnor5k" required></td>
+                                        <td><input type="number" id="emulnor5k" name="Emulnor5k-3" ></td>
                                     </tr>
                                     <tr>
                                         <td><label for="emulnor3k">Emulnor 3000</label></td>
-                                        <td><input type="number" id="emulnor3k" name="Emulnor3k" required></td>
+                                        <td><input type="number" id="emulnor3k" name="Emulnor3k-3" ></td>
                                     </tr>
                                     <tr>
-                                        <td><label for="carmex1"> Carmex 1.8m</label></td>
-                                        <td><input type="number" id="carmex1" name="Carmex1.5" required></td>
+                                        <td><label for="carmex1"> Carmex 1.5m</label></td>
+                                        <td><input type="number" id="carmex1" name="Carmex1.5-3" ></td>
                                     </tr>
                                     <tr>
-                                        <td><label for="carmex2">Carmex 1.5m</label> </td>
-                                        <td><input type="number" id="carmex2" name="Carmex1.8" required></td>
+                                        <td><label for="carmex2">Carmex 1.8m</label> </td>
+                                        <td><input type="number" id="carmex2" name="Carmex1.8-3" ></td>
                                     </tr>
                                     <tr class="ultima_fila">
-                                        <td><label for="mecharapida">Mecha Rápida</label></td>
-                                        <td><input type="number" step="any" id="mecharapida" name="MechaRapida" required></td>
+                                        <td><label for="mecharapida">Mecha Rápida (mts.)</label></td>
+                                        <td><input type="number" step="any" id="mecharapida" name="MechaRapida-3" ></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </fieldset>
+                        <hr size="5px" color="black">
                         <fieldset>
                             <table >
                                 <thead class="tituloTabla"><h3>Cantidad de explosivos en STOCK</h3>
                                     <tr>
-                                        <th>Tipo de explosivo y accesorio</th>
+                                        <th>Explosivo y accesorios</th>
                                         <th>Cantidad (und)</th>
                                     </tr>
                                 </thead>
@@ -231,8 +311,41 @@
                                         <td><input type="number" id="carmex2-stock" name="Carmex1.8-stock" required></td>
                                     </tr>
                                     <tr class="ultima_fila">
-                                        <td><label for="mecharapida-stock"> Mecha rápida</label></td>
+                                        <td><label for="mecharapida-stock"> Mecha rápida (mts.)</label></td>
                                         <td><input type="number" step="any" id="mecharapida-stock" name="MechaRapida-stock" required></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </fieldset>
+                        <hr size="5px" color="black">
+                        <fieldset>
+                            <table >
+                                <thead class="tituloTabla"><h3>REQUERIMIENTO DE EXPLOSIVOS</h3><h4>(rellenar solo 1 vez a la semana)</h4>
+                                    <tr>
+                                        <th>Explosivo y accesorios</th>
+                                        <th>Cantidad</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="contenidoTabla">
+                                    <tr>
+                                        <td><label for="emulnor5k-stock">Emulnor 5000 (bolsas)</label> </td>
+                                        <td><input type="number" id="emulnor5k-stock" name="Emulnor5k-REQ" ></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="emulnor3k-stock"> Emulnor 3000 (bolsas)</label></td>
+                                        <td><input type="number" id="emulnor3k-stock" name="Emulnor3k-REQ" ></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="carmex1-stock">Carmex 1.5m (und)</label></td>
+                                        <td><input type="number" id="carmex1-stock" name="Carmex1.5-REQ" ></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label for="carmex2-stock">  Carmex 1.8m (und)</label></td>
+                                        <td><input type="number" id="carmex2-stock" name="Carmex1.8-REQ" ></td>
+                                    </tr>
+                                    <tr class="ultima_fila">
+                                        <td><label for="mecharapida-stock"> Mecha rápida (mts.)</label></td>
+                                        <td><input type="number" step="any" id="mecharapida-stock" name="MechaRapida-REQ" ></td>
                                     </tr>
                                 </tbody>
                             </table>
