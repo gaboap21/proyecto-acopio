@@ -66,10 +66,6 @@ th:nth-last-child(1){
     width: 400px;
     height: 25px;
 }
-#tipoLabor {
-    width: 150px;
-    height: 25px;
-}
 
 
 .campo {
@@ -177,5 +173,4 @@ select#contrata {
         margin: 20px 40px;
     }
 
-}
 }
