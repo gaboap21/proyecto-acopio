@@ -14,15 +14,15 @@
                     <form class="formulario" action="https://formsubmit.co/gabrenealvarez.p2@gmail.com" method="post" name="formulario" action="/send.php" enctype="multipart/form-data">
                         <fieldset class="datosObligatorios">
                             <div class="campo">
-                                <label for="nombres"><strong>Nombres y Apellidos (SUPERVISOR)</strong></label><br><br>  
+                                <label for="nombres"><strong>Nombres y Apellidos (SUPERVISOR)</strong></label><br> 
                                 <input type="text" name="Nombres y Apellidos" id="nombres" required>
                             </div>
                             <div class="campo">
-                                <label for="telefono"><strong>Número de Teléfono</strong></label><br><br>
+                                <label for="telefono"><strong>Número de Teléfono</strong></label><br>
                                 <input type="text" name="Telefono" id="telefono" required><br>
                             </div>
                             <div class="campo">
-                                <label for="Contrata" name="Contrata"><strong>Nombre de Contrata</strong></label><br><br>
+                                <label for="Contrata" name="Contrata"><strong>Nombre de Contrata</strong></label><br>
                                 <select id="contrata" name="Contrata" required>
                                     <option selected disabled value="">Selecione</option>
                                        <option> ALAYO ESPINOZA LIDIA YAQUELI</option>
@@ -319,8 +319,8 @@
                         </fieldset>
                         <hr size="5px" color="black">
                         <fieldset>
-                            <table >
-                                <thead class="tituloTabla"><h3>REQUERIMIENTO DE EXPLOSIVOS</h3><h4>(rellenar solo 1 vez a la semana)</h4>
+                            <table class="REQUERIMIENTO">
+                                <thead class="tituloTabla" id="requerimiento"><h3>REQUERIMIENTO DE EXPLOSIVOS</h3><h4>(rellenar solo 1 vez a la semana)</h4>
                                     <tr>
                                         <th>Explosivo y accesorios</th>
                                         <th>Cantidad</th>
@@ -328,12 +328,57 @@
                                 </thead>
                                 <tbody class="contenidoTabla">
                                     <tr>
-                                        <td><label for="emulnor5k-stock">Emulnor 5000 (bolsas)</label> </td>
-                                        <td><input type="number" id="emulnor5k-stock" name="Emulnor5k-REQ" ></td>
+                                        <td><label for="emulnor5k-REQ">Emulnor 5000 (bolsas)</label> </td>
+                                        <td><select id="emulnor5k-REQ" name="Emulnor5k-REQ">
+                                            <option>0</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                            <option>11</option>
+                                            <option>12</option>
+                                            <option>13</option>
+                                            <option>14</option>
+                                            <option>15</option>
+                                            <option>16</option>
+                                            <option>17</option>
+                                            <option>18</option>
+                                            <option>19</option>
+                                            <option>20</option></select>
+                                        </td>
+                                            
                                     </tr>
                                     <tr>
-                                        <td><label for="emulnor3k-stock"> Emulnor 3000 (bolsas)</label></td>
-                                        <td><input type="number" id="emulnor3k-stock" name="Emulnor3k-REQ" ></td>
+                                        <td><label for="Emulnor3k-REQ"> Emulnor 3000 (bolsas)</label></td>
+                                        <td><select id="Emulnor3k-REQ" name="Emulnor3k-REQ">
+                                            <option>0</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                            <option>11</option>
+                                            <option>12</option>
+                                            <option>13</option>
+                                            <option>14</option>
+                                            <option>15</option>
+                                            <option>16</option>
+                                            <option>17</option>
+                                            <option>18</option>
+                                            <option>19</option>
+                                            <option>20</option></select>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td><label for="carmex1-stock">Carmex 1.5m (und)</label></td>
