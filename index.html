@@ -19,7 +19,7 @@
                             </div>
                             <div class="campo">
                                 <label for="telefono"><strong>Número de Teléfono</strong></label><br>
-                                <input type="text" name="Telefono" id="telefono" required><br>
+                                <input type="number" name="Cel" id="telefono" required><br>
                             </div>
                             <div class="campo">
                                 <label for="Contrata" name="Contrata"><strong>Nombre de Contrata</strong></label><br>
@@ -64,7 +64,7 @@
                                 </select>
                             </div>
                             <div class="campo">
-                                <label for="zonalabor" name="ZonaNivel"><strong>Zona - Nivel la labor</strong></label><br><br>
+                                <label for="zonalabor" name="ZonaNivel"><strong>Zona - Nivel</strong></label><br><br>
                                 <select id="zonalabor" name="ZonaLabor" required>
                                     <option selected disabled value="">Selecione</option>
                                     <option>Atahualpa</option>
@@ -77,7 +77,7 @@
                         </fieldset> 
                         <fieldset>
                             <label for="fecha"><strong>Fecha de reporte</strong></label></fieldset>
-                            <input type="date"  name="Fecha" id="fecha" min="2023-01-01" max="2023-12-31" requiredx/> 
+                            <input type="date"  name="Fecha" id="fecha" min="2023-01-01" max="2023-12-31" required/> 
                         </fieldset>
                         <fieldset class="UP">
                             <label class="unidadProduccion"><strong>Unidad de Producción</strong></label><br><br>
@@ -90,14 +90,14 @@
                                         <input type="radio" name="unidadProduccion" value="paraiso">Paraíso
                                     </label> -->
                                     <label>
-                                        <input type="radio" name="Unidad de Produccion" value="cedro" checked>Cedro
+                                        <input type="radio" name="UP" value="Cedro" checked>Cedro
                                     </label>
                                 </div>
                         </fieldset>
                         <fieldset>
                             <label for="turno"><strong>Turno de Trabajo</strong></label><br><br>
                                 
-                                    <select id="turno"  name="Turno de Trabajo" required>
+                                    <select id="turno"  name="Turno" required>
                                     <option>Selecione</option>
                                     <option>Día</option>
                                     <option>Noche</option>
@@ -107,10 +107,10 @@
                             <label class="pregunta"><strong>¿Se realizó PERFORACION?</strong></label><br><br>
                                 <div class="pregunta">
                                     <label>
-                                        <input type="radio" name="yes-o-no" value="si" checked>SI
+                                        <input type="radio" name="SI-o-NO" value="si" checked>SI
                                     </label>
                                     <label>
-                                        <input type="radio" name="yes-o-no" value="no" >NO
+                                        <input type="radio" name="SI-o-NO" value="no" >NO
                                     </label>
                                 </div>
                         </fieldset>
@@ -119,7 +119,7 @@
                             <legend><h3>*DISPARO 1</h3></legend>
                             <label for="labor"><strong>Tipo de Labor</strong></label>
                                     <div><br>
-                                        <select id="labor" name="Tipo de Labor1">
+                                        <select id="labor" name="Labor1">
                                         <option >NINGUNA</option>
                                         <option >Cortada</option>
                                         <option >Chimenea</option>
@@ -129,11 +129,11 @@
                                         <option >Pique</option>
                                         </select><br><br>
                                     </div>
-                            <label for="taladrosperforados"><strong>Cantidad de taladros perforados  <input id="taladrosperforados" name="TaladrosPerforados1" type="number" value="0"></strong></label>
+                            <label for="taladrosperforados"><strong>Cantidad de taladros perforados  <input id="taladrosperforados" name="Perforados1" type="number" value="0"></strong></label>
                             <div class="tipoTal">
                                 <ul>
-                                    <li><label for="taladroscargados">Cargados <input id="taladroscargados" type="number"  name="TaladrosCargados1" value="0" ></strong></label></li>
-                                    <li><label for="taladrosvacios">Vacios <input id="taladrosvacios" type="number"  name="TaladrosVacios1" value="0"></strong></label></li>
+                                    <li><label for="taladroscargados">Cargados <input id="taladroscargados" type="number"  name="Cargados1" value="0" ></strong></label></li>
+                                    <li><label for="taladrosvacios">Vacios <input id="taladrosvacios" type="number"  name="Vacios1" value="0"></strong></label></li>
                                 </ul> 
                             </div>
                         </fieldset>
@@ -166,7 +166,7 @@
                                     </tr>
                                     <tr class="ultima_fila">
                                         <td><label for="mecharapida">Mecha Rápida (mts.)</label></td>
-                                        <td><input type="number" step="any" id="mecharapida" name="MechaRapida"  value="0"></td>
+                                        <td><input type="number" step="any" id="mecharapida" name="MR"  value="0"></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -176,7 +176,7 @@
                             <legend><h3>*DISPARO 2</h3></legend>
                             <label for="labor"><strong>Tipo de Labor</strong></label>
                                     <div><br>
-                                        <select id="labor" name="Tipo de Labor2"  >
+                                        <select id="labor" name="Labor2"  >
                                         <option>NINGUNA</option>
                                         <option >Cortada</option>
                                         <option >Chimenea</option>
@@ -186,11 +186,11 @@
                                         <option >Pique</option>
                                         </select><br><br>
                                     </div>
-                            <label for="taladrosperforados"><strong>Cantidad de taladros perforados  <input id="taladrosperforados" name="TaladrosPerforados2" type="number"  value="0"></strong></label>
+                            <label for="taladrosperforados"><strong>Cantidad de taladros perforados  <input id="taladrosperforados" name="Perforados2" type="number"  value="0"></strong></label>
                             <div class="tipoTal">
                                 <ul>
-                                    <li><label for="taladroscargados">Cargados <input id="taladroscargados" type="number"  name="TaladrosCargados2"  value="0"></strong></label></li>
-                                    <li><label for="taladrosvacios">Vacios <input id="taladrosvacios" type="number"  name="TaladrosVacios2"  value="0"></strong></label></li>
+                                    <li><label for="taladroscargados">Cargados <input id="taladroscargados" type="number"  name="Cargados2"  value="0"></strong></label></li>
+                                    <li><label for="taladrosvacios">Vacios <input id="taladrosvacios" type="number"  name="Vacios2"  value="0"></strong></label></li>
                                 </ul> 
                             </div>
                         </fieldset>
@@ -223,7 +223,7 @@
                                     </tr>
                                     <tr class="ultima_fila">
                                         <td><label for="mecharapida">Mecha Rápida (mts.)</label></td>
-                                        <td><input type="number" step="any" id="mecharapida" name="MechaRapida-2"  value="0"></td>
+                                        <td><input type="number" step="any" id="mecharapida" name="MR-2"  value="0"></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -233,7 +233,7 @@
                             <legend><h3>*DISPARO 3</h3></legend> 
                             <label for="labor"><strong>Tipo de Labor</strong></label>
                                     <div><br>
-                                        <select id="labor" name="Tipo de Labor3" >
+                                        <select id="labor" name="Labor3" >
                                         <option>NINGUNA</option>
                                         <option >Cortada</option>
                                         <option >Chimenea</option>
@@ -243,11 +243,11 @@
                                         <option >Pique</option>
                                         </select><br><br>
                                     </div>  
-                            <label for="taladrosperforados"><strong>Cantidad de taladros perforados  <input id="taladrosperforados" name="TaladrosPerforados3" type="number"  value="0"></strong></label>
+                            <label for="taladrosperforados"><strong>Cantidad de taladros perforados  <input id="taladrosperforados" name="Perforados3" type="number"  value="0"></strong></label>
                             <div class="tipoTal">
                                 <ul>
-                                    <li><label for="taladroscargados">Cargados <input id="taladroscargados" type="number"  name="TaladrosCargados3"  value="0"></strong></label></li>
-                                    <li><label for="taladrosvacios">Vacios <input id="taladrosvacios" type="number"  name="TaladrosVacios3"  value="0"></strong></label></li>
+                                    <li><label for="taladroscargados">Cargados <input id="taladroscargados" type="number"  name="TCargados3"  value="0"></strong></label></li>
+                                    <li><label for="taladrosvacios">Vacios <input id="taladrosvacios" type="number"  name="Vacios3"  value="0"></strong></label></li>
                                 </ul> 
                             </div>
                         </fieldset>
@@ -279,7 +279,7 @@
                                     </tr>
                                     <tr class="ultima_fila">
                                         <td><label for="mecharapida">Mecha Rápida (mts.)</label></td>
-                                        <td><input type="number" step="any" id="mecharapida" name="MechaRapida-3"  value="0"></td>
+                                        <td><input type="number" step="any" id="mecharapida" name="MR-3"  value="0"></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -312,7 +312,7 @@
                                     </tr>
                                     <tr class="ultima_fila">
                                         <td><label for="mecharapida-stock"> Mecha rápida (mts.)</label></td>
-                                        <td><input type="number" step="any" id="mecharapida-stock" name="MechaRapida-stock" required  value="0"></td>
+                                        <td><input type="number" step="any" id="mecharapida-stock" name="MR-stock" required  value="0"></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -390,18 +390,18 @@
                                     </tr>
                                     <tr class="ultima_fila">
                                         <td><label for="mecharapida-stock"> Mecha rápida (mts.)</label></td>
-                                        <td><input type="number" step="any" id="mecharapida-stock" name="MechaRapida-REQ"  value="0"></td>
+                                        <td><input type="number" step="any" id="mecharapida-stock" name="MR-REQ"  value="0"></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </fieldset>
                         <fieldset>
                             <legend name="evidencias1"><h3>*Adjuntar evidencias fotográficas DISPARO 1*</h3></legend>
-                            <input type="file" id="insertarimg1" name="EvidenciasFotograficas1" accept=".pdf,.jpg,.png" multiple />
+                            <input type="file" id="insertarimg1" name="EF1" accept=".pdf,.jpg,.png" multiple />
                             <legend name="evidencias2"><h3>*Adjuntar evidencias fotográficas DISPARO 2*</h3></legend>
-                            <input type="file" id="insertarimg2" name="EvidenciasFotograficas2" accept=".pdf,.jpg,.png" multiple />
+                            <input type="file" id="insertarimg2" name="EF2" accept=".pdf,.jpg,.png" multiple />
                             <legend name="evidencias3"><h3>*Adjuntar evidencias fotográficas DISPARO 3*</h3></legend>
-                            <input type="file" id="insertarimg3" name="EvidenciasFotograficas3" accept=".pdf,.jpg,.png" multiple />
+                            <input type="file" id="insertarimg3" name="EF3" accept=".pdf,.jpg,.png" multiple />
                         </fieldset>
                         <input type="submit" value="Enviar Reporte" class="enviar">
                     </form> 
