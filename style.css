@@ -14,9 +14,9 @@ fieldset {
 
 .formulario {
     width: 900px;
-    margin: 0 auto;
+    margin: 0px auto 150px auto;
     text-align: center;
-    background-color: #cdcdcd;
+    background-color: rgb(200, 200, 200);
 }
 
 header{
@@ -129,6 +129,8 @@ select#contrata {
 }
 
 
+
+
 @media screen and (max-width: 480px){
 
    .formulario{
@@ -146,14 +148,23 @@ select#contrata {
         border-radius: 4px;
    }
    
-    #zonalabor, #fecha, #turno, #labor {
+    #fecha, #turno, #labor, #material {
         width: 120px;
         padding: 3px 3px;
         text-align: center;
         font-weight: bold;
         border-radius: 4px;
         border-color: 4px solid black;
+    }
+
+    #zonalabor{
+        width: 140px;
+        padding: 3px 3px;
+        font-weight: bold;
+        border-radius: 4px;
+        border-color: 4px solid black;
 }
+
     input#taladrosperforados, input#taladroscargados, input#taladrosvacios{
         width: 50px;
         padding: 3px 3px;
@@ -166,7 +177,7 @@ select#contrata {
         border-radius: 3px;
     }
 
-    select#contrata {
+    select#contrata, select#material{
         width: 300px;
         padding: 3px 3px;
         border-radius: 5px;
