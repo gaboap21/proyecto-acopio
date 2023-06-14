@@ -84,8 +84,6 @@
                                 <div class="unidad">
                                     <label>
                                         <input type="radio" name="UnidadProduccion" value="CEDRO" checked>Cedro</input>
-                                        <!-- <input type="radio" name="UnidadProduccion" value="PARAISO" >Paraiso</input>
-                                        <input type="radio" name="UnidadProduccion" value="SANTA MARIA" >Santa Maria</input> -->
                                     </label>
                                 </div>
                         </fieldset>
@@ -162,14 +160,15 @@
                                         <option >Pique</option>
                                         </select><br><br>
                                     </div>
-                                <label for="labor"><strong>Material</strong></label>
-                                    <div><br>
-                                        <select id="labor" name="material1">
-                                        <option>Ninguna</option>
-                                        <option >MINERAL</option>
-                                        <option >DESMONTE</option>
-                                        </select><br><br>
-                                    </div>
+                                <fieldset>
+                                        <label for="material"><strong>Material</strong></label><br><br>
+                                            
+                                                <select id="turno"  name="material1" required>
+                                                <option selected disabled value="">Seleccione</option>
+                                                <option>MINERAL</option>
+                                                <option>DESMONTE</option>
+                                                </select>
+                                </fieldset>
                         <div>
                                 <label for="avanceLong"><strong>Avance (mts.)</strong></label> </div><br>
                                 <input type="number" step="any" id="mecharapida" name="avance1"  value="0">
@@ -232,14 +231,12 @@
                                         </select>
                                     </div>
                         <fieldset>
-                            <label for="labor"><strong>Material</strong></label>
-                                    <div><br>
-                                        <select id="labor" name="material2">
-                                        <option>Ninguna</option>
-                                        <option >MINERAL</option>
-                                        <option >DESMONTE</option>
-                                        </select><br><br>
-                                    </div> 
+                            <label for="material"><strong>Material</strong></label><br><br>          
+                            <select id="turno"  name="material1" required>
+                            <option selected disabled value="">Seleccione</option>
+                                <option>MINERAL</option>
+                                <option>DESMONTE</option>
+                            </select>
                         </fieldset>
                         <div>
                                 <label for="avanceLong"><strong>Avance (mts.)</strong></label> </div><br>
@@ -321,13 +318,6 @@
                                 </tbody>
                             </table>
                         </fieldset>
-                        <!-- <hr size="5px" color="black"> -->
-                        <!-- //<fieldset>
-                            <legend name="evidencias1"><h3>*Adjuntar evidencias fotográficas DISPARO 1*</h3></legend>
-                            <input type="file" id="insertarimg1" name="EvidenciasFotograficas1" accept=".pdf,.jpg,.png" multiple />
-                            <legend name="evidencias2"><h3>*Adjuntar evidencias fotográficas DISPARO 2*</h3></legend>
-                            <input type="file" id="insertarimg2" name="EvidenciasFotograficas2" accept=".pdf,.jpg,.png" multiple />
-                        </fieldset>// -->
                         <input type="submit" name="register" value="Enviar Reporte" class="enviar" onclick="return confirmacion()">
                         
                     </form> 
